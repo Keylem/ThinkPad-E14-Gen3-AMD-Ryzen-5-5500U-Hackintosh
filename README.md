@@ -1,6 +1,8 @@
 # ThinPad E14 Gen3 AMD Ryzen 5 5500U Hackitosh
  ### Intended to be run on Big Sur with an recovery installer.
  !! If possible, use the ethernet port while installing from the recovery !!
+ After setting up the recovery, press "space" to unveil the hidden options
+ Be cautious when resetting the nvram, as it is known to brick some thinkpads (mine didin't but be aware of it)
 
 Status
 --
@@ -29,7 +31,7 @@ What will never be working?
 - Fingerprint sensor
 
 ## ! Disclaimer !
-* Do not trust the author to update this EFI, because of the lack of time and energy needed to maintain this project. Feel free to fork it and build upon it *
+* Do not trust the author to update this EFI, because of the lack of time and energy needed to maintain this project. Feel free to fork it and build upon it.
 
 Recommended BIOS settings
 --
