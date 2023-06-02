@@ -6,17 +6,16 @@
 
 Status
 --
-- Not Usable, opening chrome/firefox crashes system
+- Not for daily usage, opening chrome/firefox crashes system (because of the lack of hardware acceleration)
 - Doesn't wake up from sleep (but opening and closing lid does not crash)
-- Sound not working (because of laziness)
-- CPU power Management is not working (and probably never will be)
-- Some adobe apps and docker containers straight up does not work
-- USB ports didn't mapped (bcs of laziness again)
+- Sound not working (Labeled as ALC257 in linux but does not work)
+- partial CPU Power Management with AMDRyzenCPUPowerManagement.kext and AMD Power Gadget.app
+- Some adobe apps and docker containers straight up does not work (because of the lack of intel features)
 - 3.5mm Jack (bcs I don't have wired headphones)
 
 What is working?
 --
-- Graphics detected
+- Graphics detected (you can see the screen)
 - Wifi works (must be replaced with an intel ax200/ax210 card)
 - Bluetooth
 - Trackpad with gestures
