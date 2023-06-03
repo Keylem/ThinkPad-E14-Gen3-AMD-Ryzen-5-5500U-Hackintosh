@@ -24,6 +24,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-ECRW.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ECRW.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-HPET.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -48,6 +56,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-THINK.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-THINK.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -61,22 +77,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-ECRW.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ECRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-THINK.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-THINK.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -836,24 +836,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooI2CHID.kext</string>
-				<key>Comment</key>
-				<string>VoodooI2CHID.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooI2CHID</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>VoodooRMI.kext/Contents/PlugIns/RMII2C.kext</string>
 				<key>Comment</key>
 				<string>RMII2C.kext</string>
@@ -912,7 +894,7 @@
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
-				<data>uAgAAAAA</data>
+				<data>uAYAAAAA</data>
 				<key>ReplaceMask</key>
 				<data>//////8A</data>
 				<key>Skip</key>
@@ -942,7 +924,7 @@
 				<key>MinKernel</key>
 				<string>19.0.0</string>
 				<key>Replace</key>
-				<data>uggAAAAA</data>
+				<data>ugYAAAAA</data>
 				<key>ReplaceMask</key>
 				<data>//////8A</data>
 				<key>Skip</key>
@@ -972,7 +954,7 @@
 				<key>MinKernel</key>
 				<string>21.0.0</string>
 				<key>Replace</key>
-				<data>uggAAAAA</data>
+				<data>ugYAAAAA</data>
 				<key>ReplaceMask</key>
 				<data>////////</data>
 				<key>Skip</key>
@@ -1002,7 +984,7 @@
 				<key>MinKernel</key>
 				<string>22.4.0</string>
 				<key>Replace</key>
-				<data>uggAAAA=</data>
+				<data>ugYAAAA=</data>
 				<key>ReplaceMask</key>
 				<data>//////8=</data>
 				<key>Skip</key>
