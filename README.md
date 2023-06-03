@@ -6,12 +6,11 @@
 
 Status
 --
-- Not Usable, opening chrome/firefox crashes system
-- Doesn't wake up from sleep (but opening and closing lid does not crash)
+- No graphics acceleration is awailable for Renoir right now.
+- Sleep should be modified to use hybernation value 3
 - Sound not working (because of laziness)
-- CPU power Management is not working (and probably never will be)
+- CPU power Management is partially working, but needs AMD Power Gadget.app to fonction.
 - Some adobe apps and docker containers straight up does not work
-- USB ports didn't mapped (bcs of laziness again)
 - 3.5mm Jack (bcs I don't have wired headphones)
 
 What is working?
@@ -40,3 +39,16 @@ Recommended BIOS settings
 - TPM 2.0 --> Disabled
 - Hyperthreading --> on
 - Anything security related --> off ...
+
+To enable Sleep
+--
+sudo pmset -a standbydelayhigh 0
+sudo pmset -a ttyskeepawake 0   
+sudo pmset -a gpuswitch 0    
+sudo pmset -a halfdim 0  
+sudo pmset -a womp 0      
+sudo pmset -a acwake 0
+sudo pmset -a networkoversleep 0```
+sudo pmset -a hibernatemode 3
+
+Then you can change all of the sleep values to your intent.
