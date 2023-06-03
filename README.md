@@ -1,5 +1,5 @@
 # ThinPad E14 Gen3 AMD Ryzen 5 5500U Hackitosh
- ### Intended to be run on Big Sur with an recovery installer.
+ ### Intended to be run on Big Sur with recovery installer.
  !! If possible, use the ethernet port while installing from the recovery !!
  After setting up the recovery, press "space" to unveil the hidden options
  Be cautious when resetting the nvram, as it is known to brick some thinkpads (mine didin't but be aware of it)
