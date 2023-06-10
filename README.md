@@ -9,7 +9,7 @@
 
 Status
 --
-- No graphics acceleration is available for Renoir right now, is possible frequently update the NootedRed.kext to it's nevest from the artifacts tab --> https://github.com/NootInc/NootedRed/actions .
+- No graphics acceleration is available for Renoir right now (but will be at some point) so if possible please update the NootedRed.kext to it's newest from the artifacts tab --> https://github.com/NootInc/NootedRed/actions .
 - Sleep should be modified to use hibernation value 3 (broken by design for now because fo the NootedRed
 - CPU power Management is partially working, but needs AMD Power Gadget.app to function.
 - Some adobe apps and docker containers straight up does not work
