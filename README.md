@@ -16,7 +16,7 @@ Status
 - Sleep should be modified to use hibernation value 3 (broken by design for now because of the NootedRed
 - CPU power Management is partially working, but needs AMD Power Gadget.app to function.
 - Some adobe apps and docker containers straight up does not work
-- 3.5mm Jack appears to be working but if it is still available after wake is still unknown. 
+- 3.5mm Jack appears to be working but whether if it stays available after wake is still unknown as sleep is broken. 
 - No mic is detected and the reason is unknown
 - Startup dong is enabled by default
 - Starts up with a pretty theme with the EFI intended to be used after installation.
