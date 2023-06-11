@@ -1,4 +1,5 @@
 # ThinPad E14 Gen3 AMD Ryzen 5 5500U Hackitosh!
+[neofetch](https://github.com/Keylem/ThinkPad-E14-Gen3-AMD-Ryzen-5-5500U-Hackintosh/blob/main/neofetch.png)
  ### Intended to be run on Big Sur with recovery installer.
  !! If possible, use the ethernet port while installing from the recovery !!
  In the USB stick, to use recovery installer, use the EFI folder.
