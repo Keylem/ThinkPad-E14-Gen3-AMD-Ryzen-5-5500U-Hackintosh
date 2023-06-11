@@ -8,7 +8,7 @@
  After setting up the recovery, press "space" to unveil the hidden options
  Be cautious when resetting the nvram, as it is known to brick some thinkpads (mine didin't but be aware of it)
  !! After installing and setting up the system, mount your internal SSD's EFI partition and use the EFI folder provided in "EFI_TO_USE_AFTER_INSTALLATION" !!
- Please create a unique SMBIOS number using the MacBookPro16,3 scheme if you want to connect to your apple id at any point.
+ Please create an unique SMBIOS number using the MacBookPro16,3 scheme if you want to connect to your apple id at any point.
 
 Status
 --
