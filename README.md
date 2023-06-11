@@ -13,10 +13,10 @@
 Status
 --
 - No graphics acceleration is available for Renoir right now (but will be at some point) so if possible please update the NootedRed.kext to it's newest from the artifacts tab --> https://github.com/NootInc/NootedRed/actions .
-- Sleep should be modified to use hibernation value 3 (broken by design for now because fo the NootedRed
+- Sleep should be modified to use hibernation value 3 (broken by design for now because of the NootedRed
 - CPU power Management is partially working, but needs AMD Power Gadget.app to function.
 - Some adobe apps and docker containers straight up does not work
-- 3.5mm Jack (bcs I don't have wired headphones so I can not test it)
+- 3.5mm Jack appears to be working but if it is still available after wake is still unknown. 
 - No mic is detected and the reason is unknown
 - Startup dong is enabled by default
 - Starts up with a pretty theme with the EFI intended to be used after installation.
@@ -31,7 +31,8 @@ What is working?
 - Battery Status
 - Keyboard
 - Ethernet Port
-- Internal Sound (ALC257, layout-id=11)
+- Internal Sound with JACK (ALC257, layout-id=11)
+- HDMI ourput
 
 
 What will never be working?
