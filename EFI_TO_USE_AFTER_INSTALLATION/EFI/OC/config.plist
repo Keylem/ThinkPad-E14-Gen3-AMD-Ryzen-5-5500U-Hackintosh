@@ -2317,7 +2317,7 @@
 					<key>SystemAudioVolume</key>
 					<data>gA==</data>
 					<key>boot-args</key>
-					<string>-v keepsyms=1 debug=0x100 -vi2c-force-polling  darkwake=515 -hbfx-disable-patch-pci shikigva=80</string>
+					<string>-v keepsyms=1 debug=0x100 -vi2c-force-polling  darkwake=515 -hbfx-disable-patch-pci shikigva=80 -nredvcn</string>
 					<key>csr-active-config</key>
 					<data>AAAAAA==</data>
 					<key>run-efi-updater</key>
