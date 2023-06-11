@@ -51,7 +51,7 @@ Recommended BIOS settings
 - Anything security related --> off ...
 - Display --> set to 2GB minimum
 
-To enable Sleep
+To enable sleep
 --
 sudo pmset -a standbydelayhigh 0
 sudo pmset -a ttyskeepawake 0   
@@ -64,6 +64,71 @@ sudo pmset -a networkoversleep 0```
 sudo pmset -a hibernatemode 3
 
 Then you can change all of the sleep values to your intent.
+
+<details>  
+<summary><strong>##  Hibernation and sleep setup reference</strong></summary>
+</br>
+[Script](https://www.tonymacx86.com/threads/release-sleeponlowbattery-solb.264785) that performs auto sleep/hibernate at low battery.
+
+1. Open terminal
+1. Enter commands below one by one
+
+   Settings for AC:
+
+   ```
+   sudo pmset -c standby 1
+   sudo pmset -c hibernatemode 0
+   ```
+
+   Setting for battery:
+
+   ```
+   sudo pmset -b standby 1
+   sudo pmset -b standbydelayhigh 900
+   sudo pmset -b standbydelaylow 60
+   sudo pmset -b hibernatemode 25
+   sudo pmset -b highstandbythreshold 70
+   ```
+
+   Settings for all:
+
+   ```
+   sudo pmset -a acwake 0
+   sudo pmset -a lidwake 1
+   sudo pmset -a powernap 0
+   ```
+
+To restore default system settings run
+
+```
+sudo pmset restoredefaults
+```
+
+<details>  
+<summary><strong>Advanced energy management</strong></summary>
+
+`acwake`: wake the machine when power source (AC/battery) is changed (value = 0/1)
+
+`lidwake`: wake the machine when the laptop lid (or clamshell) is opened (value = 0/1)
+
+`powernap`: enable/disable Power Nap on supported machines (value = 0/1)
+
+`standbydelayhigh` and `standbydelaylow` specify the delay, in seconds,
+before writing the hibernation image to disk and powering off memory for Standby.
+standbydelayhigh is used when the remaining battery capacity is above `highstandbythreshold`(has a default value of 50 percent),
+and standbydelaylow is used when the remaining battery capacity is below highstandbythreshold.
+
+`hibernatemode` supports values of 0, 3, or 25. To disable hibernation, set hibernatemode to 0.  
+`hibernatemode` = 0 by default on desktops. The system will not back memory up to persistent storage. The system must wake from the contents of memory; the system will lose context on power loss.  
+`hibernatemode` = 3 by default on portables. The system will store a copy of memory to persistent storage (the disk), and will power memory during sleep. The system will wake from memory, unless a power loss forces it to restore from hibernate image.  
+`hibernatemode` = 25 is only settable via pmset. The system will store a copy of memory to persistent storage (the disk), and will remove power to memory. The system will restore from disk image. If you want "hibernation" - slower sleeps, slower wakes, and better battery life, you should use this setting.
+
+[Source](https://www.dssw.co.uk/reference/pmset.html)
+
+</details>
+</br>
+</details>
+
 
 For the R7 Model
 --
