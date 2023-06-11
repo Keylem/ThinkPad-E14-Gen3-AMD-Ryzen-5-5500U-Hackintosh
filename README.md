@@ -1,4 +1,7 @@
-# ThinPad E14 Gen3 AMD Ryzen 5 5500U Hackitosh
+# ThinPad E14 Gen3 AMD Ryzen 5 5500U Hackitosh!
+[Uploading Ekran Resmi 2023-06-11 03.33.03.png…]()
+[Ekran Resmi 2023-05-30 13 03 40](https://github.com/Keylem/ThinkPad-E14-Gen3-AMD-Ryzen-5-5500U-Hackintosh/assets/52345143/eafb33ae-95af-4bc0-8aa6-b5ab6c9a4286)
+
  ### Intended to be run on Big Sur with recovery installer.
  !! If possible, use the ethernet port while installing from the recovery !!
  In the USB stick, to use recovery installer, use the EFI folder.
