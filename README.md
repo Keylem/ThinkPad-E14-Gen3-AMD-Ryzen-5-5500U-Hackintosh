@@ -13,7 +13,8 @@
 Status
 --
 - No graphics acceleration is available for Renoir right now (but will be at some point) so if possible please update the NootedRed.kext to it's newest from the artifacts tab --> https://github.com/NootInc/NootedRed/actions .
-- Sleep should be OK by default. But if you have any issues look at the sleep references at above.
+- Sleep should be OK by default (Hibernation needs emulated NVRAM to be set). But if you have any issues look at the sleep references at above. (Nevertheless set the GPU switheroo to 0 with "sudo pmset -a gpuswitch 0"
+- Waking from sleep sometimes crashes trackpad (I2C) and trackpoint (PS2), presumably because of the Input.kext used in the both VoodooI2C and VoodooPS2. To make fix it disable either the TrackPoint or the TrackPad from the BIOS settings.
 - CPU power Management is partially working, but needs AMD Power Gadget.app to function.
 - Some adobe apps and docker containers straight up does not work
 - 3.5mm Jack appears to be working but whether if it stays available after wake is still unknown as sleep is broken. 
