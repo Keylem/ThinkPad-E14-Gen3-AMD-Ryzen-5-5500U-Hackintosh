@@ -134,3 +134,14 @@ and standbydelaylow is used when the remaining battery capacity is below highsta
 For the R7 Model
 --
 If you ever intend to use this EFI with a 8 core R7, please modify BA060000 0000 value to BA080000 0000 on config.plist, then rename your CPU using CPU-Name.command
+
+Thanks to the magicians who made it possible: 
+--
+- Visual Ehrmanntraut
+- ExtremeXT
+- NyanCatTW1
+- Trassic
+- 4TechGuns
+- ... and many other NootedRed Testers
+- RehabMan
+- Dortania
