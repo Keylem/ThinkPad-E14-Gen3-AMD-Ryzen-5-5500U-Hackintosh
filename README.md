@@ -1,4 +1,6 @@
 # ThinPad E14 Gen3 AMD Ryzen 5 5500U Hackitosh!
+
+# For the moment, this repository won't receive any updates! Please fork it and build upon it!
 [Neofetch](https://github.com/Keylem/ThinkPad-E14-Gen3-AMD-Ryzen-5-5500U-Hackintosh/blob/main/neofetch.png)
 
 [Cinebench](https://github.com/Keylem/ThinkPad-E14-Gen3-AMD-Ryzen-5-5500U-Hackintosh/blob/main/benchmark.png)
