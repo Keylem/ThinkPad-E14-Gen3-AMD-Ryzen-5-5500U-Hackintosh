@@ -10,17 +10,19 @@
  After setting up the recovery, press "space" to unveil the hidden options
  Be cautious when resetting the nvram, as it is known to brick some thinkpads (mine didin't but be aware of it)
  !! After installing and setting up the system, mount your internal SSD's EFI partition and use the EFI folder provided in "EFI_TO_USE_AFTER_INSTALLATION" !!
- Please create an unique SMBIOS number using the MacBookPro16,3 scheme if you want to connect to your apple id at any point.
+ Please create an unique SMBIOS number using the MacBookPro16,3 scheme if you want to connect to your apple id at any point. --> https://github.com/corpnewt/GenSMBIOS
 
 Status
 --
-- 
+- MacOS Sonoma Support (Can be updated directly from BigSur after changing the EFI and using the ethernet cable)
+- Because of the licensing issues, NootedRed.kext has to be installed directly from it's github actions page --> https://github.com/ChefKissInc/NootedRed
+ Please place the NootedRed.kext inside EFI/OC/Kexts
 - CPU power Management is partially working. But laptop still generates a lot of heat.
 - Some adobe apps and docker containers straight up does not work
 - Starts up with a pretty theme with the EFI intended to be used after installation.
-- Almost perfect waking from hibernation. sometimes problems with darkwake.
+- Almost perfect waking from hibernation with hibernate 25, hibernate 3 is still broken. sometimes problems with darkwake.
 - L1 level powersave for every available device
-- NootedRed modified to be used with powersave. 
+- Power Button seems to be not working (when pressed, nothing happens)
 
 What is working?
 --
@@ -46,6 +48,7 @@ What will never be working?
 ## ! Disclaimer !
 * Do not trust the author to update this EFI, because of the lack of time and energy needed to maintain this project. Feel free to fork it and build upon it.
 
+
 Recommended BIOS settings
 --
 - Secure boot --> Off
@@ -55,17 +58,10 @@ Recommended BIOS settings
 - Anything security related --> off ...
 - Display --> set to 2GB minimum
 
-To enable sleep
+To play with sleep opitions
 --
-sudo pmset -a standbydelayhigh 0
-sudo pmset -a ttyskeepawake 0   
-sudo pmset -a gpuswitch 0    
-sudo pmset -a halfdim 0  
-sudo pmset -a womp 0      
-sudo pmset -a acwake 0
-sudo pmset -a networkoversleep 0```
+type "man pmset" on your terminal.
 
-sudo pmset -a hibernatemode 3
 
 Then you can change all of the sleep values to your intent.
 
