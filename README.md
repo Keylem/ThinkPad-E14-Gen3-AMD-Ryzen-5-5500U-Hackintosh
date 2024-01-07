@@ -15,6 +15,7 @@
 Status
 --
 - MacOS Sonoma Support (Can be updated directly from BigSur after changing the EFI and using the ethernet cable)
+-Directly use the Sonoma EFI when installing if you want to use Sonoma.
 - Because of the licensing issues, NootedRed.kext has to be installed directly from it's github actions page --> https://github.com/ChefKissInc/NootedRed
  Please place the NootedRed.kext inside EFI/OC/Kexts
 - CPU power Management is partially working. But laptop still generates a lot of heat.
