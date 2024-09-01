@@ -4,6 +4,8 @@
 [Neofetch](https://github.com/Keylem/ThinkPad-E14-Gen3-AMD-Ryzen-5-5500U-Hackintosh/blob/main/neofetch.png)
 
 [Cinebench](https://github.com/Keylem/ThinkPad-E14-Gen3-AMD-Ryzen-5-5500U-Hackintosh/blob/main/benchmark.png)
+ ### Why it is a BAD idea to use a premade EFI?
+ The configuration of a machine can DRASTICALLY change from one machine to another. That change also includes the displacement of the primary disc on the motherboard, the addition of a second disc, the use of a different wifi card, the BIOS settings etc. A personnal anectode: when I was trying to set up my machine for the second time, I noticed that whenever I forget to plug in the SSD that came with the machine and only left the secondary SSD that I installed afterwards, I wasn't able to use the webcam! That was also the primary cause of the sleep problems of my machine. As you can see, maybe there is nothing to do with a PCIE device and a USB device (an internal one...) it was still causing problems. You may use this repo as a blueprint, but building up everything from scratch will certaily lead to less headache/time/effort... it is not so hard to do so. check this guide: [guide](https://chefkissinc.github.io/applehax/nootedred/)
  ### Intended to be run on Big Sur with recovery installer.
  !! If possible, use the ethernet port while installing from the recovery !!
  In the USB stick, to use recovery installer, use the EFI folder.
